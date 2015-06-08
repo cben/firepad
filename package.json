@@ -36,10 +36,11 @@
     "package.json"
   ],
   "dependencies": {
-    "jsdom": "3.x",
-    "firebase": "2.x"
+    "firebase": "2.x",
+    "jsdom": "3.x"
   },
   "devDependencies": {
+    "bower": "^1.4.1",
     "coveralls": "^2.11.2",
     "grunt": "~0.4.5",
     "grunt-cli": "0.1.13",
@@ -58,7 +59,9 @@
     "karma-spec-reporter": "0.0.13"
   },
   "scripts": {
+    "build": "bower install; grunt",
     "test": "grunt test",
-    "travis": "grunt"
+    "travis": "grunt",
+    "watch": "bower install; grunt watch"
   }
 }
